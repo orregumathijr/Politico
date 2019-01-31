@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Politico | login page </title>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  			crossorigin="anonymous">
+  	</script>
+
+	<style type="text/css">
+		.container{
+			min-width: 1200px;
+			margin: 20px;
+		}
+		.header{
+			font-size: 20px;
+			text-align: center;
+			font-weight: 400;
+		}
+		.form{
+			width: 50%;
+			display: block;
+			margin: 0 auto;
+			margin-top: 50px;
+		}
+		.label{
+			display: inline-block;
+    		margin-bottom: 5px;
+    		font-size: 16px;
+
+		}
+		.input-space {
+		    display: block;
+		    width: 100%;
+		    padding: .375rem .75rem;
+		    font-size: 12px;
+		    line-height: 1.5;
+		    color: #495057;
+		    background-color: #fff;
+		    border: 1px solid #ced4da;
+		    border-radius: .25rem;
+		    margin-bottom: 10px;
+		}
+		.btn{
+			background-color: #007bff;
+    		border-color: #007bff;
+    		color: #ffffff;
+    		text-align: center;
+    		padding: 10px;
+    		border-radius: 5px;
+		}
+	</style>
+</head>
+<body>
+	<div class="section">
+		<div class="container">
+			<div class="row">
+				<div class="header">
+					Politico Signup
+					<br>
+					<small style="text-align: right;font-size: 14px;"><a href="login.html">Login</a> Incase you have an account</small>
+				</div>
+				<form class="form">
+					<div class="form-group">
+						<div class="label">Firstname</div>
+						<input type="text" class="input-space" name="firstname" id="firstname" placeholder="Firstname" required>
+					</div>
+					<div class="form-group">
+						<div class="label">Lastname</div>
+						<input type="text" class="input-space" name="lastname" id="lastname" placeholder="Lastname" required>
+					</div>
+					<div class="form-group">
+						<div class="label">Email Address</div>
+						<input type="email" class="input-space" name="email" id="email" placeholder="Email Address" required>
+					</div>
+					<div class="form-group">
+						<div class="label">Password</div>
+						<input type="password" class="input-space" name="password" id="password" placeholder="Password"required>
+					</div>
+					<div class="form-group">
+						<div class="label">Confirm Password</div>
+						<input type="password" class="input-space" name="password" id="password" placeholder="Confirm password"required>
+					</div>
+					<div class="form-group">
+						<button class="btn" type="submit" name="login"><i class="fa fa-paper-plane"></i> Submit</button>
+						<small style="float: right;font-size: 14px;"><a href="register.html">Forgot password?</small>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

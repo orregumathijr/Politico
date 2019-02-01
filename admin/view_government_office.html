@@ -12,6 +12,7 @@
 			font-size: 20px;
 			text-align: center;
 			font-weight: 400;
+			margin-bottom: 30px;
 		}
 		.form{
 			width: 50%;
@@ -72,7 +73,7 @@
 		    float: right;
 		    margin: 0 auto;
 		    width: 65%;
-		    border: 1px solid #dee2e6;
+		    /*border: 1px solid #dee2e6;*/
 		}
 		.sidebar-item {
 		    position: relative;
@@ -82,6 +83,14 @@
 		    background-color: #fff;
 		    border: 1px solid rgba(0,0,0,.125);
 		}
+
+		table, th, td {
+		  border: 1px solid black;
+		  border-collapse: collapse;
+		  /*margin-top: 50px;*/
+		}
+		  
+
 	</style>
 </head>
 <body>
@@ -94,15 +103,15 @@
 	  <div class="left-column">
 	  	<ul class="sidebar">
 		  <li class="sidebar-item"><a href="dashboard.html">Dashboard</a></li>
-		  <li class="sidebar-item"><a href="add_party.html">Add a political party</a></li>
-		  <li class="sidebar-item"><a href="view_party.html">View a political party</a></li>
-		  <li class="sidebar-item"><a href="add_government_office.html">Add government office</a></li>
-		  <li class="sidebar-item"><a href="view_government_office.html">View government offices</a></li>
+		  <li class="sidebar-item"><a href="addparty.html">Add a political party</a></li>
+		  <li class="sidebar-item"><a href="#">View a political party</a></li>
+		  <li class="sidebar-item"><a href="#">Add government office</a></li>
+		  <li class="sidebar-item"><a href="#">View government offices</a></li>
 		</ul>
 
 		<ul class="sidebar">
 		  <li class="sidebar-item"><a href="#">Dashboard</a></li>
-		  <li class="sidebar-item"><a href="vie_position.html">Vie for a position</a></li>
+		  <li class="sidebar-item"><a href="#">Vie for a position</a></li>
 		</ul>
 
 		<ul class="sidebar">
@@ -112,11 +121,42 @@
 		  <li class="sidebar-item"><a href="#">Vote for a politician</a></li>
 		</ul>
 
+
 	  </div>
 	  <div class="right-column">
 	  			<div class="header">
-					Welcome to Politico Admin portal
+					Government Offices
 				</div>
+				<div class="row">
+					<a href="add_government_office.html">
+						<button class="btn" style="float:right;"><i class="fa fa-pencil-alt"></i> Add government office</button>
+					</a>
+				</div>
+				<div class="row">
+				<table style="width:100%;">
+				  <tr>
+				    <th>Office Id</th>
+				    <th>Name</th> 
+				    <th>Created at</th>
+				    <th>Updated at</th>
+				    <th>Action</th>
+				  </tr>
+				  <tr>
+				    <td>1</td>
+				    <td>AMB</td> 
+				    <td></td>
+				    <td></td>
+				    <td><a href="#">Edit</a>  <a href="#">Delete</a></td>
+				  </tr>
+				  <tr>
+				    <td>2</td>
+				    <td>DP</td> 
+				    <td></td>
+				    <td></td>
+				    <td><a href="#">Edit</a>  <a href="#">Delete</a></td>
+				  </tr>
+				</table>
+			</div>
 	  </div>
 	</div>
 </body>

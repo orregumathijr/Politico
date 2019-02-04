@@ -4,15 +4,21 @@
 	<title>Politico | Admin dashboard</title>
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
 	<style type="text/css">
+		body{
+			margin: 0;
+			background-color: #ECF0F1;
+		}
 		.container{
 			min-width: 1200px;
 			margin: 0 auto;
 		}
 		.header{
-			font-size: 20px;
-			text-align: center;
-			font-weight: 400;
-			margin-bottom: 30px;
+			font-size: 24px;
+			text-align: left;
+			font-weight: bold;
+			margin-top: 5px;
+			margin-bottom: 15px;
+
 		}
 		.form{
 			width: 50%;
@@ -20,6 +26,8 @@
 			margin: 0 auto;
 			margin-top: 50px;
 			padding: 20px;
+			background-color: #ffffff;
+			border-radius: 5px;
 		}
 		.label{
 			display: inline-block;
@@ -29,7 +37,7 @@
 		}
 		.input-space {
 		    display: block;
-		    width: 100%;
+		    width: 60%;
 		    padding: .375rem .75rem;
 		    font-size: 12px;
 		    line-height: 1.5;
@@ -44,8 +52,9 @@
     		border-color: #007bff;
     		color: #ffffff;
     		text-align: center;
-    		padding: 10px;
+    		padding: 5px;
     		border-radius: 5px;
+    		margin-bottom: 5px;
 		}
 		.nav{
 			width: 100%;
@@ -64,90 +73,171 @@
 			color: #ffffff;
 			margin-right: 5px;
 		}
-		.left-column{
-			float: left;
-		  	margin: 0 1.5%;
-		  	width: 30%;
+		.page-wrap { 
+		  /*width: 600px; */
+		  margin: 0; 
+		  position: relative; 
 		}
-		.right-column {
-		    float: right;
-		    margin: 0 auto;
-		    width: 65%;
-		    /*border: 1px solid #dee2e6;*/
+		.sidebar { 
+		  width: 230px;
+		  height: auto;
+		  display: block;
+		  position: fixed; 
+		  top: 0;
+		  left:0;
+		  padding-top: 50px;
+		  min-height: 100%;
+		  z-index:810;
+		  background-color: #222d32;;
+		  color: #b8c7ce;
 		}
-		.sidebar-item {
+		.sidebar-menu {
 		    position: relative;
 		    display: block;
 		    padding: .75rem 1.25rem;
 		    margin-bottom: -1px;
-		    background-color: #fff;
-		    border: 1px solid rgba(0,0,0,.125);
+		    list-style: none;
+		}
+		.sidebar-menu li a {
+		    padding: 12px 5px 12px 0px;
+		    display: block;
+		    text-decoration: none;
+		    color: #b8c7ce;
+		    font-size: 14px;
+		    width: 100%;
+		    margin-left: 0;
+		}
+		.sidebar-menu li a:hover {
+			background-color: #34495E;
+			color: #ffffff;
+			font-weight: bold;
+
+		}
+		.main-header {
+		    position: relative;
+		    max-height: 100px;
+		    z-index: 1030;
+		    margin-top: 0;
+		    float: left;
+		    height: 50px;
+		    font-size: 20px;
+		    font-weight: bold;
+		    line-height: 50px;
+		    text-align: center;
+		    width: 200px;
+		    padding: 0 15px;
+		    font-weight: 300;
+		    overflow: hidden;
+		    color: #ffffff;
+		    background-color: #5499C7;
+		}
+		.sidebar-menu li header {
+			font-size: 14px;
+		}
+		.main-content {
+			/*width: 100%;*/
+			margin-left: 25%;
+			height: 100%;
 		}
 
-		table, th, td {
-		  border: 1px solid black;
+
+		#table {
 		  border-collapse: collapse;
-		  /*margin-top: 50px;*/
+		  width: 100%;
+		  font-size: 14px;
 		}
-		  
 
+		#table td, #table th {
+		  border: 1px solid #ddd;
+		  padding: 8px;
+		  font-size: 14px;
+
+		}
+
+		#table tr:hover {background-color: #ddd;}
+
+		#table th {
+		  padding-top: 12px;
+		  padding-bottom: 12px;
+		  text-align: left;
+		  color: #b8c7ce;
+		  font-size: 14px;
+		  background-color:#5499C7; 
+		}
+
+		
 	</style>
 </head>
 <body>
 	<div class="nav">
+		<div class="main-header">
+	  		<span>POLITICO</span>
+	  	</div>
 		<ul>
-			<li>Orre Gumathi</li>
+			<!-- <li>Orre Gumathi</li> -->
 		</ul>
 	</div>
-	<div class="row">
-	  <div class="left-column">
-	  	<ul class="sidebar">
-		  <li class="sidebar-item"><a href="dashboard.html">Dashboard</a></li>
-		  <li class="sidebar-item"><a href="add_party.html">Add a political party</a></li>
-		  <li class="sidebar-item"><a href="view_party.html">View a political party</a></li>
-		  <li class="sidebar-item"><a href="add_government_office.html">Add government office</a></li>
-		  <li class="sidebar-item"><a href="view_government_office.html">View government offices</a></li>
-		  <li class="sidebar-item"><a href="vie_position.html">Vie for a position</a></li>
-		</ul>
-
-
+	<div class="page-wrap">
+	  
+	  <div class="sidebar">
+	  	<ul class="sidebar-menu">
+        <li>
+          <a href="pages/widgets.html">  
+          	<span>Dashboard</span>
+          </a>
+        </li>
+        <li>
+          <a href="pages/widgets.html">
+           <span>Political Party</span>
+          </a>
+        </li>
+        <li>
+          <a href="pages/widgets.html">
+           <span>Government Office</span>
+          </a>
+        </li>
+        <li>
+          <a href="pages/widgets.html">
+           <span>Vie for a position</span>
+          </a>
+        </li>
 	  </div>
-	  <div class="right-column">
-	  			<div class="header">
-					Government Offices
-				</div>
-				<div class="row">
-					<a href="add_government_office.html">
-						<button class="btn" style="float:right;"><i class="fa fa-pencil-alt"></i> Add government office</button>
-					</a>
-				</div>
-				<div class="row">
-				<table style="width:100%;">
-				  <tr>
-				    <th>Office Id</th>
-				    <th>Name</th> 
-				    <th>Created at</th>
-				    <th>Updated at</th>
-				    <th>Action</th>
-				  </tr>
-				  <tr>
-				    <td>1</td>
-				    <td>AMB</td> 
-				    <td></td>
-				    <td></td>
-				    <td><a href="#">Edit</a>  <a href="#">Delete</a></td>
-				  </tr>
-				  <tr>
-				    <td>2</td>
-				    <td>DP</td> 
-				    <td></td>
-				    <td></td>
-				    <td><a href="#">Edit</a>  <a href="#">Delete</a></td>
-				  </tr>
-				</table>
+	</div>
+	  <div class="main-content">
+  			<div class="header">
+				Government Offices
 			</div>
+			<div class="row">
+				<a href="add_government_office.html">
+					<button class="btn"><i class="fa fa-pencil-alt"></i> Add government office</button>
+				</a>
+			</div>
+			<div class="row">
+				<table style="width:80%;" id ="table">
+			  <tr>
+			    <th>Office Id</th>
+			    <th>Name</th> 
+			    <th>Created at</th>
+			    <th>Updated at</th>
+			    <th>Action</th>
+			  </tr>
+			  <tr>
+			    <td>1</td>
+			    <td>AMB</td> 
+			    <td></td>
+			    <td></td>
+			    <td><a href="#">Edit</a>  <a href="#">Delete</a></td>
+			  </tr>
+			  <tr>
+			    <td>2</td>
+			    <td>DP</td> 
+			    <td></td>
+			    <td></td>
+			    <td><a href="#">Edit</a>  <a href="#">Delete</a></td>
+			  </tr>
+				</table>
+	  		</div>
 	  </div>
-	</div>
 </body>
 <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
   			crossorigin="anonymous"></script>

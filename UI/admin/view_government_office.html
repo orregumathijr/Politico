@@ -135,9 +135,14 @@
 			font-size: 14px;
 		}
 		.main-content {
-			/*width: 100%;*/
-			margin-left: 25%;
-			height: 100%;
+			min-height: 250px;
+			width: 1000px;
+		    padding: 15px;
+		    margin-right: 200px;
+		    margin-left: 300px;
+		    padding-left: 15px;
+		    padding-right: 15px;
+
 		}
 
 
@@ -160,9 +165,22 @@
 		  padding-top: 12px;
 		  padding-bottom: 12px;
 		  text-align: left;
-		  color: #b8c7ce;
+		  /*color: #b8c7ce;*/
 		  font-size: 14px;
-		  background-color:#5499C7; 
+		  font-weight: bold;
+		  /*background-color:#5499C7; */
+		}
+		.section{
+			position: relative;
+		    border-radius: 3px;
+		    background: #ffffff;
+		    border-top: 3px solid #d2d6de;
+		    margin-bottom: 20px;
+		    margin: 0 auto;
+		    /*width: 100%;*/
+		    box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+		    padding: 20px;
+		    /*overflow: hidden;*/
 		}
 
 		
@@ -208,34 +226,36 @@
   			<div class="header">
 				Government Offices
 			</div>
-			<div class="row">
+			<div class="section">
 				<a href="add_government_office.html">
 					<button class="btn"><i class="fa fa-pencil-alt"></i> Add government office</button>
 				</a>
-			</div>
-			<div class="row">
-				<table style="width:80%;" id ="table">
-			  <tr>
-			    <th>Office Id</th>
-			    <th>Name</th> 
-			    <th>Created at</th>
-			    <th>Updated at</th>
-			    <th>Action</th>
-			  </tr>
-			  <tr>
-			    <td>1</td>
-			    <td>AMB</td> 
-			    <td></td>
-			    <td></td>
-			    <td><a href="#">Edit</a>  <a href="#">Delete</a></td>
-			  </tr>
-			  <tr>
-			    <td>2</td>
-			    <td>DP</td> 
-			    <td></td>
-			    <td></td>
-			    <td><a href="#">Edit</a>  <a href="#">Delete</a></td>
-			  </tr>
+				<br>
+				<hr>
+			<!-- </div> -->
+			<!-- <div class="row"> -->
+				<table id ="table">
+				  <tr>
+				    <th>Office Id</th>
+				    <th>Name</th> 
+				    <th>Created at</th>
+				    <th>Updated at</th>
+				    <th>Action</th>
+				  </tr>
+				  <tr>
+				    <td>1</td>
+				    <td>AMB</td> 
+				    <td></td>
+				    <td></td>
+				    <td><a href="#">Edit</a>  <a href="#">Delete</a></td>
+				  </tr>
+				  <tr>
+				    <td>2</td>
+				    <td>DP</td> 
+				    <td></td>
+				    <td></td>
+				    <td><a href="#">Edit</a>  <a href="#">Delete</a></td>
+				  </tr>
 				</table>
 	  		</div>
 	  </div>

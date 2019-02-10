@@ -1,37 +1,32 @@
-## Welcome to GitHub Pages
+## Welcome to Politico 
 
-You can use the [editor on GitHub](https://github.com/orregumathijr/Politico/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+Politico is an election based platform. You can access it here https://orregumathijr.github.io/Politico/ on Github Pages 
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+It enables a an administrator to create a government office and official posts. A politician can then show interest in vying for a particular government post created by the admin. A voter is able to vote for his/her preffered politician vying for a government office. The user can view the government posts, the politicians vying and his/her preffered candidate
 
-### Markdown
+## Tools Used
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+The UI templates are created using HTML 5 and CSS.
 
-```markdown
-Syntax highlighted code block
+Python is the proggramming language used in developing politico
 
-# Header 1
-## Header 2
-### Header 3
+## Files Contained 
 
-- Bulleted
-- List
+- Politico UI templates are divided into two folders.
 
-1. Numbered
-2. List
+1. Admin folder - contains the following files:
+- https://github.com/orregumathijr/Politico/blob/master/UI/admin/dashboard.html - Dashboard
+- https://github.com/orregumathijr/Politico/blob/master/UI/admin/add_party.html - Adding a party
+- https://github.com/orregumathijr/Politico/blob/master/UI/admin/edit_party.html - Editing a party
+- https://github.com/orregumathijr/Politico/blob/master/UI/admin/view_party.html - View all parties
+- https://github.com/orregumathijr/Politico/blob/master/UI/admin/add_government_office.html - Add a government office
+- https://github.com/orregumathijr/Politico/blob/master/UI/admin/edit_government_office.html - Edit a government office
+- https://github.com/orregumathijr/Politico/blob/master/UI/admin/view_government_office.html - View all government offices 
+- https://github.com/orregumathijr/Politico/blob/master/UI/admin/vie_position.html - Vie for a position
+- https://github.com/orregumathijr/Politico/blob/master/UI/admin/profile.html - User profile
+2. The front end folder contains the login and signup pages.
+- https://github.com/orregumathijr/Politico/blob/master/UI/frontend/login.html - Login page
+- https://github.com/orregumathijr/Politico/blob/master/UI/frontend/signup.html - Signup page
 
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/orregumathijr/Politico/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+**Author
+Orre Gumathi Steve

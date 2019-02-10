@@ -28,5 +28,5 @@ Python is the proggramming language used in developing politico
 - https://github.com/orregumathijr/Politico/blob/master/UI/frontend/login.html - Login page
 - https://github.com/orregumathijr/Politico/blob/master/UI/frontend/signup.html - Signup page
 
-**Author
+## Author
 Orre Gumathi Steve
